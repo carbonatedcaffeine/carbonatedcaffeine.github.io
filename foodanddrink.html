@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawke's Bay Experiences</title>
+    <link rel="stylesheet" href="style.css" type="text/css">	
+</head>
+
+<body>
+  <!--Navbar (Mobile+Desktop)-->
+	<nav>	
+    <div class="nav-bg">
+      <div class="nav-container">
+        <div class="title-text">
+          <h1>Hawkes Bay Experiences</h1>
+        </div>
+        <div class="navbar">
+          <ul class="desktoplinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="foodanddrink.html"><b><u>Food and Drink</u></b></a></li>
+            <li><a href="transportationandaccommodation.html">Transport and Accommodation</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="mobilenav">
+      <a href="index.html" class="mobileactive">Hawke's Bay Experiences</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="mobilelinks">
+        <a href="index.html">Home</a>
+        <a href="activities.html">Activities</a>
+        <a href="foodanddrink.html">Food and Drink</a>
+        <a href="transportationandaccommodation.html">Transportation and Accommodation</a>
+        <a href="about.html">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="openBurger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function openBurger() {
+        var x = document.getElementById("mobilelinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+	</nav>	
+
+    <!-- Main Area-->
+    <main>
+      <div class="maincontainer">
+        <div class="maintext">
+          <h1><u>Welcome to Hawkes Bay!</u></h1>
+          <br>
+          
+          <h2><u>Things to do in Hawke's Bay</u></h2>
+          <div class="rowcontainer">
+            <div class="imagebox">
+              <a href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/hawkes-bay/places/cape-kidnappers-gannet-reserve/?tab-id=50578"><img src="images/cape.jpg"></a>
+              <div class="imagetext">Cape Kidnappers</div>
+            </div>
+  
+            <div class="imagebox">
+              <a href="https://www.forestandbird.org.nz/projects/blowhard-bush-reserve-hastings"><img src="images/blowhard.jpg"></a>
+              <div class="imagetext">Blowhard Bush</div>
+            </div>
+          </div>
+          
+          <h2><u>Great Food and Drink!</u></h2>
+          <div class="rowcontainer">
+            <div class="imagebox">
+              <a href="https://www.roseandshamrock.co.nz"><img src="images/r&s.jpg"></a>
+              <div class="imagetext">Rose & Shamrock</div>
+            </div>
+
+            <div class="imagebox">
+              <a href="https://craggyrange.com"><img src="images/craggy.jpg"></a>
+              <div class="imagetext">Craggy Range</div>
+            </div>
+          </div>
+
+          <h2><u>Transport & Accommodation</u></h2>
+          <div class="rowcontainer">
+            <div class="imagebox">
+              <a href="https://www.gobay.co.nz"><img src="images/gobay.jpg"></a>
+              <div class="imagetext">GoBay reigonal bus service</div>
+            </div>
+
+            <div class="imagebox">
+              <a href="https://www.rentalcars.co.nz"><img src="images/pegasus.jpg"></a>
+              <div class="imagetext">Pegasus Car Hire</div>
+            </div>
+          </div>
+          
+          <div class="rowcontainer">
+            <div class="imagebox">
+              <a href="https://www.portershotel.co.nz"><img src="images/porters.jpg"></a>
+              <div class="imagetext">Porters Hotel</div>
+            </div>
+
+            <div class="imagebox">
+              <a href="https://www.thedome.co.nz"><img src="images/dome.jpg"></a>
+              <div class="imagetext">The DOME</div>
+            </div>
+          </div>
+          
+          <h2><u>About</u></h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Camden Bruce 2024
+    </footer>
+</body>
+
+</html>
