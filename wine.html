@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camden's Page</title>
+    <link rel="stylesheet" href="style-old.css" type="text/css">	
+</head>
+
+<body>
+  <!--Navbar (Mobile+Desktop)-->
+	<nav>	
+    <div class="nav-bg">
+      <div class="nav-container">
+        <div class="title-text">
+          <h1>Camden's Page</h1>
+        </div>
+        <div class="navbar">
+          <ul class="desktoplinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/carbonatedcaffeine">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@carbonatdcaffeine">YouTube</a></li>
+            <li><a><b><u>Secret</u></b></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="mobilenav">
+      <a href="index.html" class="mobileactive">Camden's Page</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="mobilelinks">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/carbonatedcaffeine">GitHub</a>
+        <li><a href="https://www.youtube.com/@carbonatdcaffeine">YouTube</a></li>
+        <a href="secret.html">Secret</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="openBurger()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function openBurger() {
+        var x = document.getElementById("mobilelinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+	</nav>
+
+    <!-- Main Area-->
+    <main>
+      <div class="maincontainer">
+        <div class="maintext">
+          <h1><u>Welcome to my page</u></h1>
+          
+          <br>
+          
+          <div class="rowcontainer">
+            <div class="imagebox">
+              <img src="images/geothermal.jpg">
+              <div class="imagetext">Camden</div>
+            </div>
+
+            <div class="imagebox">
+                <img src="images/beach.jpg">
+                <div class="imagetext">Student</div>
+            </div>
+          </div> 
+
+            <div class="rowcontainer">
+              <div class="imagebox">
+                <img src="images/pine.png">
+                <div class="imagetext">I volunteer for Pine64</div>
+              </div>
+  
+              <div class="imagebox">
+                  <img src="images/bush.png">
+                  <div class="imagetext">I drew this</div>
+              </div> 
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="wine.html">Camden Bruce 2024</a>
+    </footer>
+</body>
+
+</html>

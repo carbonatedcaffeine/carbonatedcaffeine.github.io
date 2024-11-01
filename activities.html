@@ -14,7 +14,7 @@
     <div class="nav-bg">
       <div class="nav-container">
         <div class="title-text">
-          <h1>Hawkes Bay Experiences</h1>
+          <h1>Hawke's Bay Experiences</h1>
         </div>
         <div class="navbar">
           <ul class="desktoplinks">
@@ -62,63 +62,67 @@
     <main>
       <div class="maincontainer">
         <div class="maintext">
-          <h1><u>Welcome to Hawkes Bay!</u></h1>
+          <h1><u>Things to do in Hawke's Bay</u></h1>
+          
           <br>
           
-          <h2><u>Things to do in Hawke's Bay</u></h2>
+          <h2><u>Nature Trails</u></h2>
           <div class="rowcontainer">
-            <div class="imagebox">
-              <a href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/hawkes-bay/places/cape-kidnappers-gannet-reserve/?tab-id=50578"><img src="images/cape.jpg"></a>
+            <div class="imagebox" onclick="showItem(1)">
+              <img src="images/cape.jpg">
               <div class="imagetext">Cape Kidnappers</div>
             </div>
-  
-            <div class="imagebox">
-              <a href="https://www.forestandbird.org.nz/projects/blowhard-bush-reserve-hastings"><img src="images/blowhard.jpg"></a>
+
+            <div class="imagebox" onclick="showItem(2)">
+              <img src="images/blowhard.jpg">
               <div class="imagetext">Blowhard Bush</div>
             </div>
           </div>
-          
-          <h2><u>Great Food and Drink!</u></h2>
+
           <div class="rowcontainer">
-            <div class="imagebox">
-              <a href="https://www.roseandshamrock.co.nz"><img src="images/r&s.jpg"></a>
-              <div class="imagetext">Rose & Shamrock</div>
+            <div class="imagebox" onclick="showItem(3)">
+              <img src="images/shine.jpg">
+              <div class="imagetext">Shine Falls</div>
+            </div>
+    
+              <div class="imagebox" onclick="showItem(4)">
+                <img src="images/redwoods.jpg">
+                <div class="imagetext">Big Redwoods Trail</div>
+              </div>
+          </div>
+
+          <h2><u>Family Fun</u></h2>
+          <div class="rowcontainer">
+            <div class="imagebox" onclick="showItem(17)">
+              <img src="images/spa.jpg">
+              <div class="imagetext">Ocean Spa</div>
             </div>
 
-            <div class="imagebox">
-              <a href="https://craggyrange.com"><img src="images/craggy.jpg"></a>
-              <div class="imagetext">Craggy Range</div>
+            <div class="imagebox" onclick="showItem(18)">
+              <img src="images/blowhard.jpg">
+              <div class="imagetext">Arataki Honey Visitor Centre</div>
             </div>
           </div>
 
-          <h2><u>Transport & Accommodation</u></h2>
           <div class="rowcontainer">
-            <div class="imagebox">
-              <a href="https://www.gobay.co.nz"><img src="images/gobay.jpg"></a>
-              <div class="imagetext">GoBay reigonal bus service</div>
+            <div class="imagebox" onclick="showItem(19)">
+              <img src="images/minigolf.jpg">
+              <div class="imagetext">Par2 Minigolf</div>
             </div>
-
-            <div class="imagebox">
-              <a href="https://www.rentalcars.co.nz"><img src="images/pegasus.jpg"></a>
-              <div class="imagetext">Pegasus Car Hire</div>
-            </div>
+    
+              <div class="imagebox" onclick="showItem(20)">
+                <img src="images/railway.jpg">
+                <div class="imagetext">Keirunga Park Railway</div>
+              </div>
           </div>
-          
-          <div class="rowcontainer">
-            <div class="imagebox">
-              <a href="https://www.portershotel.co.nz"><img src="images/porters.jpg"></a>
-              <div class="imagetext">Porters Hotel</div>
-            </div>
 
-            <div class="imagebox">
-              <a href="https://www.thedome.co.nz"><img src="images/dome.jpg"></a>
-              <div class="imagetext">The DOME</div>
-            </div>
-          </div>
-          
-          <h2><u>About</u></h2>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </a>
+
+          <script>
+            function showItem(i) {
+                localStorage.setItem('selectedItemID', i);
+                window.open('itempage.html', "_self");
+            }
+          </script>
         </div>
       </div>
     </main>
